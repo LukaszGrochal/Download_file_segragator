@@ -22,9 +22,10 @@ folder_path = 'C:/Users/Grochal/Downloads/'
 
 
 if __name__ == '__main__':
-    file_formats = {'pdf': ['pdf'], 'image': ['img', 'jpg', 'png'], 'video': [], 'audio': ['mp3'],
-                    'text': ['txt', 'doc', 'xdoc'], 'csv': ['csv'], 'excel': ['xslx'], 'other': []}
-    file_age = {'': 'this week old'}#
+    file_formats = {'pdf': ['pdf'], 'image': ['img', 'jpg', 'png'], 'video': ['mp4'], 'audio': ['mp3'],
+                    'text': ['txt', 'doc', 'xdoc', 'docx'], 'csv': ['csv'], 'excel': ['xslx'],
+                    'books': ['mobi', 'epub'], 'other': []}
+    file_age = {'': 'this week old'}
 
     FileMover(folder_path, file_formats, file_age)
 

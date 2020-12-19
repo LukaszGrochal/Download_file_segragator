@@ -15,10 +15,10 @@ class FileMover:
         print(dir_path)
         for item in listdir(dir_path):
             path_item = dir_path + item
-            print(path_item)
-            print(path.isfile(path_item))
+            #print(path_item)
+            #print(path.isfile(path_item))
             if path.isfile(path_item):
-                print('if')
+            #    print('if')
                 self.file_move(path_item)
             # elif path.islink(path_item):
             #     print('elif')
@@ -28,6 +28,6 @@ class FileMover:
                 self.path_extractor(path_item+'/')
 
     def file_move(self, file_path):
-        print('file_move and file_path', file_path)
-        print(self.file_formats)
+        #print('file_move and file_path', file_path)
+        print(path.splitext(file_path))
         pass
